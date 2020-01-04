@@ -20,7 +20,7 @@
       "pid": "1",
       "position": {
         "x": "404",
-        "y": "170.5"
+        "y": "170"
       }
     },
     {
@@ -36,7 +36,7 @@
       "pid": "2",
       "position": {
         "x": "329",
-        "y": "320.5"
+        "y": "320"
       },
       "tags": [
         "Right-choice"
@@ -48,8 +48,11 @@
       "pid": "3",
       "position": {
         "x": "479",
-        "y": "320.5"
-      }
+        "y": "320"
+      },
+      "tags": [
+        "Wrong-choice"
+      ]
     },
     {
       "text": "You wake up in unfamiliar bed. Your actions?\n\n[[Look around]]\n[[Try to sleep a bit more]]",
@@ -69,7 +72,7 @@
       "pid": "4",
       "position": {
         "x": "329",
-        "y": "470.5"
+        "y": "470"
       }
     },
     {
@@ -90,7 +93,7 @@
       "pid": "5",
       "position": {
         "x": "254",
-        "y": "620.5"
+        "y": "620"
       },
       "tags": [
         "Right-choice"
@@ -109,8 +112,11 @@
       "pid": "6",
       "position": {
         "x": "404",
-        "y": "620.5"
-      }
+        "y": "620"
+      },
+      "tags": [
+        "Wrong-choice"
+      ]
     },
     {
       "text": "After good 10 minutes of searching, you find nothing out of the ordinary.\nThat is when some kind of alien reptile comes through the door.\n\n[[What the fuck?!->First alien encounter]]",
@@ -125,8 +131,11 @@
       "pid": "7",
       "position": {
         "x": "179",
-        "y": "770.5"
-      }
+        "y": "770"
+      },
+      "tags": [
+        "Wrong-choice"
+      ]
     },
     {
       "text": "You try to open the door and find it open.\nWhen you try to see through the open door, you come face to face with some kind of alien reptile.\n\n[[Ummm..->First alien encounter]]",
@@ -141,7 +150,7 @@
       "pid": "8",
       "position": {
         "x": "329",
-        "y": "770.5"
+        "y": "770"
       },
       "tags": [
         "Right-choice"
@@ -153,8 +162,11 @@
       "pid": "9",
       "position": {
         "x": "179",
-        "y": "920.5"
-      }
+        "y": "920"
+      },
+      "tags": [
+        "Death"
+      ]
     }
   ],
   "name": "Dizzars bizzaire adventures",

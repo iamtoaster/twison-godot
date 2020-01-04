@@ -14,14 +14,21 @@ onready var Twison = twison.new()
 export(String, FILE, \"*.json\") var scriptPath = \"res://data.json\"
 
 func _ready():
-	# Initialize the script.
+	# Initialize the script
 	Twison.parse_file(scriptPath, funcref(Twison, \"link_filter_bbcode\"))
 	
+	# Print some info about the story
 	print(\"Story name: \", Twison.get_story_name())
 	print(\"Passages: \")
 	for passage in Twison.get_passage_names():
 		print(\"\\t\"+passage)
-	
+
+	print(\"There are also following tags: \")
+	for tag in Twison.get_all_tags():
+		print(tag)
+		tag = Twison.get_passages_tagged_with(tag)
+		print(\"Passages marked with this tag (pids): \", tag)
+		
 	# Show first passage in our RichTextLabel 
 	show_passage(Twison.get_passage(Twison.get_starting_node()))
 
