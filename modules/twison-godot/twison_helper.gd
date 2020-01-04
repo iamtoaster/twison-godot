@@ -17,14 +17,15 @@ var tag_db = {}
 # and returns with what this link should be replaced.
 # For more info take a look at two example filters provided, and the documentation. 
 # --------------------------------------------------------------------------------
-# construct_tag_db : If you pass 'true' to this method, the tag db will be constructed
-# while parsing the file. It allows faster tag operations, if there are many of them.
+# construct_tag_db : If you pass 'true', the tag db will be constructed
+# while parsing the file. It allows faster tag operations, especially if there are many of both of them.
 # I honestly don't know why you might wanna disable it, but the option is there.
 func parse_file(filePath: String, \
 				linkFilter: FuncRef = null, \
 				construct_tag_db = true):
 	data = {}
 	passages = {}
+	tag_db = {}
 	
 	data = _load_file(filePath)
 	_extract_passages()
