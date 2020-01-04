@@ -2,6 +2,7 @@
 ---
 This script allows easier communication between Twine and Godot using Twison exporter.
 
+Tested with Godot 3.1, but should work with later versions.
 
 To start using this script, copy script located under modules/twison-godot folder to your project, at any location. (For example: `res://modules/twison-godot/twison_helper.gd`)
 
@@ -17,7 +18,7 @@ func _ready():
 ```
 And done! Now you have access to all helper fucntions that this script provides for working with twine stories.
 
-For more info head over to the wiki section, or take a look at example scene provided with the script which demonstrates basic usage. (It is called `Node2D.tscn`, and is located at root of this repository.)
+For more info head over to the wiki section, or take a look at example scene provided with the script which demonstrates basic usage (It is called `Node2D.tscn`, and is located at root of this repository). The script itself also has a lot of comments describing its inner workings.
 
 Please note that this sctipt only provides means with which to work with Twine stories, not how to display them. Example scene which is included with this script shows how to use `RichTextLabel` to display a story. 
 
