@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends RichTextLabel
+
+# Example script to demonstrate how to use twison helper.
+# Please attach this script to RichTextLabel with bbcodes enabled.
+# Then, attach meta_clicked(...) signal to _on_meta_clicked(...) function.
+# This script expects the helper script to be located at
+# res://modules/twison-godot/twison_helper.gd
+
+onready var twison = preload(\"res://modules/twison-godot/twison_helper.gd\")
+onready var Twison = twison.new()
+export(String, FILE, \"*.json\") var scriptPath = \"res://data.json\"
+
+func _ready():
+	# Initialize the script.
+	Twison.parse_file(scriptPath, funcref(Twison, \"link_filter_bbcode\"))
+	
+	print(\"Story name: \", Twison.get_story_name())
+	print(\"Passages: \")
+	for passage in Twison.get_passage_names():
+		print(\"\\t\"+passage)
+	
+	# Show first passage in our RichTextLabel 
+	show_passage(Twison.get_passage(Twison.get_starting_node()))
+
+func show_passage(passage: Dictionary):
+	set_bbcode(passage[\"text\"])
+
+func _on_meta_clicked(meta):
+	print(\"\\nLink clicked: \", meta)
+	var next_chapter = Twison.get_passage_by_name(meta)
+	
+	if (next_chapter.has(\"links\")):
+		print(\"Next passage has following links:\")
+		for i in Twison.get_passage_links(next_chapter):
+			print(\"\\t\"+i)
+	
+	show_passage(next_chapter)
+
+"
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Node2D" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -477.0
+margin_top = -273.0
+margin_right = 477.0
+margin_bottom = 273.0
+bbcode_enabled = true
+script = SubResource( 1 )
+[connection signal="meta_clicked" from="Node2D" to="Node2D" method="_on_meta_clicked"]

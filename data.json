@@ -1,0 +1,166 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You see a wild cat.\nOmg so adorable. Much cute.\n\n[[Try to pet it]]\n[[Walk away]]",
+      "links": [
+        {
+          "name": "Try to pet it",
+          "link": "Try to pet it",
+          "pid": "2"
+        },
+        {
+          "name": "Walk away",
+          "link": "Walk away",
+          "pid": "3"
+        }
+      ],
+      "name": "A wild cat appears.",
+      "pid": "1",
+      "position": {
+        "x": "404",
+        "y": "170.5"
+      }
+    },
+    {
+      "text": "You approach the cat. It does not try to run away from you, surprisingly.\nYou pet the cat.\n...\nThat is the last thing you remember as you black out.\n\n[[Interesting cat...]]",
+      "links": [
+        {
+          "name": "Interesting cat...",
+          "link": "Interesting cat...",
+          "pid": "4"
+        }
+      ],
+      "name": "Try to pet it",
+      "pid": "2",
+      "position": {
+        "x": "329",
+        "y": "320.5"
+      },
+      "tags": [
+        "Right-choice"
+      ]
+    },
+    {
+      "text": "You decided to walk away and go on with your life.",
+      "name": "Walk away",
+      "pid": "3",
+      "position": {
+        "x": "479",
+        "y": "320.5"
+      }
+    },
+    {
+      "text": "You wake up in unfamiliar bed. Your actions?\n\n[[Look around]]\n[[Try to sleep a bit more]]",
+      "links": [
+        {
+          "name": "Look around",
+          "link": "Look around",
+          "pid": "5"
+        },
+        {
+          "name": "Try to sleep a bit more",
+          "link": "Try to sleep a bit more",
+          "pid": "6"
+        }
+      ],
+      "name": "Interesting cat...",
+      "pid": "4",
+      "position": {
+        "x": "329",
+        "y": "470.5"
+      }
+    },
+    {
+      "text": "This is a very spartan room with only a bed and a door.\n\n[[Try to find secret passages by touching all the walls]]\n[[Try to open the door]]",
+      "links": [
+        {
+          "name": "Try to find secret passages by touching all the walls",
+          "link": "Try to find secret passages by touching all the walls",
+          "pid": "7"
+        },
+        {
+          "name": "Try to open the door",
+          "link": "Try to open the door",
+          "pid": "8"
+        }
+      ],
+      "name": "Look around",
+      "pid": "5",
+      "position": {
+        "x": "254",
+        "y": "620.5"
+      },
+      "tags": [
+        "Right-choice"
+      ]
+    },
+    {
+      "text": "You try to go back to sleep, but you can't.\n\n[[Maybe I should look aroud?->Look around]]",
+      "links": [
+        {
+          "name": "Maybe I should look aroud?",
+          "link": "Look around",
+          "pid": "5"
+        }
+      ],
+      "name": "Try to sleep a bit more",
+      "pid": "6",
+      "position": {
+        "x": "404",
+        "y": "620.5"
+      }
+    },
+    {
+      "text": "After good 10 minutes of searching, you find nothing out of the ordinary.\nThat is when some kind of alien reptile comes through the door.\n\n[[What the fuck?!->First alien encounter]]",
+      "links": [
+        {
+          "name": "What the fuck?!",
+          "link": "First alien encounter",
+          "pid": "9"
+        }
+      ],
+      "name": "Try to find secret passages by touching all the walls",
+      "pid": "7",
+      "position": {
+        "x": "179",
+        "y": "770.5"
+      }
+    },
+    {
+      "text": "You try to open the door and find it open.\nWhen you try to see through the open door, you come face to face with some kind of alien reptile.\n\n[[Ummm..->First alien encounter]]",
+      "links": [
+        {
+          "name": "Ummm..",
+          "link": "First alien encounter",
+          "pid": "9"
+        }
+      ],
+      "name": "Try to open the door",
+      "pid": "8",
+      "position": {
+        "x": "329",
+        "y": "770.5"
+      },
+      "tags": [
+        "Right-choice"
+      ]
+    },
+    {
+      "text": "It is evidently afraid of you, and uses some kind of weapon you didn't notice at first. You never wake up again.",
+      "name": "First alien encounter",
+      "pid": "9",
+      "position": {
+        "x": "179",
+        "y": "920.5"
+      }
+    }
+  ],
+  "name": "Dizzars bizzaire adventures",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.5",
+  "ifid": "FD2F8D49-109F-4AA3-A095-EA852C8BF1E4"
+}
+
