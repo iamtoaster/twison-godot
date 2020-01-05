@@ -188,6 +188,12 @@ func get_passages_tagged_with(tag: String):
 		else:
 			return []
 
+# Gets all passage tags
+static func get_passage_tags(passage: Dictionary):
+	if (passage.has("tags")):
+		return passage["tags"]
+	return []
+
 # Returns a pid
 # Returns -1 if starting node not found
 func get_starting_node():
