@@ -135,6 +135,20 @@ func get_passage_by_name(name: String):
 			return passages[pid]
 	return {"text": "Error: Passage \""+name+"\" not found"}
 
+#Returns the name of a passage
+func get_passage_name(passage : Dictionary):
+	if(passage.has("name")):
+		return passage["name"]
+	else:
+		return "Name not found!"
+
+#Returns the pid of a passage
+func get_passage_pid(passage : Dictionary):
+	if(passage.has("pid")):
+		return int(passage["pid"])
+	else:
+		return -1
+
 # Returns an array of links in string form, "name->link"
 # If name IS the link, then just name.
 func get_passage_links(passage: Dictionary):
