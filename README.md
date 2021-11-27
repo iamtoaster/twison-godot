@@ -1,4 +1,7 @@
 # Twison to godot
+
+# Note
+If strongly recommend you use something like [Dialogic](https://github.com/coppolaemilio/dialogic) or maybe [Dialogue editor](https://github.com/VP-GAMES/DialogueEditor) or even [Clyde](https://github.com/viniciusgerevini/godot-clyde-dialogue) for creating dialogue for your games instead of this.
 ---
 This script allows easier communication between Twine and Godot using Twison exporter.
 
